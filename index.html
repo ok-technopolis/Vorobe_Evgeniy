@@ -6,48 +6,71 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>GETTING STARTED WITH BRACKETS</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="main.css">
-        <style>
-
-
-        </style>
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <body>
-
+        <h1 class="todos_header">todos</h1>
         <div class="todos">
-            <h1 class="todos_header">todos</h1>
+
             <ul class="card">
-                <li class="header">
-                    <div>
-                        <input type="image" src="imgs/icons/select-all.png" alt="select all" />
-                        <input type="text" name="" value="What needs to be done?" />
+
+                <li>
+                    <div class="header">
+                        <input class="checkbox_items" type="image" src="imgs/icons/select-all.png" alt="select all" />
+                        <input class="text_header" type="text" name="" value="What needs to be done?" />
                     </div>
                 </li>
-                <li class="item">
-                    <div>
+
+
+                <li>
+                    <div class="item">
                         <span class="checkbox_container"></span>
-                        <input type="image" src="imgs/icons/completed.png" alt="completed?" />
-                        <input type="text" name="" value="item1" />
-                        <input type="image" src="imgs/icons/close.png" alt="delete" />
+                        <input class="checkbox_image" type="image" src="imgs/icons/completed.png" alt="completed?" />
+                        <div class="im_table">
+                            <div class="im_cell">
+                                <input class="delete_image" type="image" src="imgs/icons/close.png" alt="delete" />
+                            </div>
+                        </div>
+                        <input class="text" type="textarea" name="" value="item1" />
+                        <div class="terminator"> </div>
                     </div>
                 </li>
+                <li>
+                    <div class="item">
+                    </div>
+                </li>
+
+
                 <li class="footer">
                     <div>
-                        <span id="items_left">1 items left</span>
-                        <button id="all_items" type="button">All</button>
-                        <button id="active_items" type="button">Active</button>
-                        <button id="completed_items" type="button">Completed</button>
-                        <button id="clear_completed" type="button">Clear completed</button>
+                        <div id="left_container">
+                            <div id="items_left">1 items left</div>
+                        </div>
+                        <div id="center_container">
+                            <button id="all_items" class="footer_button" type="button">All</button>
+                            <button id="active_items" class="footer_button" type="button">Active</button>
+                            <button id="completed_items" class="footer_button" type="button">Completed</button>
+                        </div>
+                        <div id="rigth_container">
+                            <button id="clear_completed" class="footer_button" type="button">Clear completed</button>
+                        </div>
                     </div>
                 </li>
             </ul>
         </div>
-        <div class="sheets">
+
+
+
+        <div class="sheet" id="sheet1">
         </div>
-        <div class="sheets">
+        <div class="sheet" id="sheet2">
         </div>
 
     </body>
+
+</html>
+
+</body>
 
 </html>

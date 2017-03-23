@@ -8,32 +8,37 @@ fonts:
   define font sizes
 delete button:
   center bottom
-checkbox_image:
+checkbox-image:
   center at center
 */
 
 
 
 @font-face {
-    font-family: 'HelveticaNeueUltraLight';
-    src: url(fonts/HelveticaNeue-UltraLight.otf) format('truetype');
+    font-family: 'MyHelveticaNeueUltraLight';
+    src: url('../fonts/HelveticaNeue-UltraLight.otf') format('truetype');
+    /*font-weight: 100;*/
 }
 @font-face {
-    font-family: 'HelveticaNeueLight';
-    src: url(fonts/HelveticaNeue_Light.ttf) format('truetype');
+    font-family: 'MyHelveticaNeueLight';
+    src: url('../fonts/HelveticaNeue-Light.ttf') format('truetype');
+    /*font-weight: 200;*/
 }
 @font-face {
-    font-family: 'HelveticaNeueLightItalic';
-    src: url(fonts/Helvetica-Neue-Light-Italic.ttf) format('truetype');
+    font-family: 'MyHelveticaNeueItalic';
+    src: url('../fonts/Helvetica-Neue-Light-Italic.ttf') format('truetype');
+    /*font-style: italic;*/
 }
 
 body{
   background-color: #f5f5f5;
 }
 
-.todos_header{
-  font-family: HelveticaNeueUltraLight;
+.todos-header{
+  font-family: 'MyHelveticaNeueUltraLight';
   font-size: 100pt;
+  font-weight: 100;
+  color: #ebd7d7;
   background-color: #f5f5f5;
   margin: 10% 0 0 0;
   text-align: center;
@@ -47,13 +52,13 @@ body{
   margin-right: auto;
   position: relative;
   z-index: 3;
-  box-shadow: 3px 3px 3px 1px #d4d4d4;
 }
 
 .card{
   list-style-type: none;
   margin: 0;
   padding: 0;
+  box-shadow: 1px 1px 10px 3px #d4d4d4;
 }
 
 .item:after{
@@ -67,13 +72,15 @@ body{
   padding: 0;
 }
 
-.checkbox_items{
+.checkbox-items{
   float:left;
   margin:  24px 18px 24px 18px;
 }
-.text_header{
-  font-family: HelveticaNeueLightItalic;
+.text-header{
+  font-family: 'MyHelveticaNeueLight';
+  font-style: italic;
   font-size: 24pt;
+  color: #cccccc;
   float: left;
   border: 0;
   width: 488px;
@@ -91,7 +98,7 @@ body{
   padding: 0;
 }
 
-.checkbox_container{
+.checkbox-container{
   float: left;
   width: 32px;
   height: 32px;
@@ -101,7 +108,7 @@ body{
   margin:13px 14px 13px 12px;
 }
 
-.checkbox_image{
+.checkbox-image{
   float: left;
   width: 20px;
   height: 20px;
@@ -109,14 +116,14 @@ body{
   margin-top: 19px;
 }
 
-.im_table{
+.im-table{
   /*display: table;*/
 }
-.im_cell{
+.im-cell{
   /*display: table-cell;
   vertical-align: bottom;*/
 }
-.delete_image{
+.delete-image{
   /*background-color: #B5C5F1;*/
   float: right;
   width: 18px;
@@ -130,7 +137,7 @@ body{
   /*text-align: center;*/
 }
 
-.text_header:hover,
+.text-header:hover,
 .text:hover,
 .item:hover,
 .header:hover{
@@ -138,8 +145,9 @@ body{
 }
 
 .text{
-  font-family: HelveticaNeueUltraLight;
+  font-family: 'MyHelveticaNeueLight';
   font-size: 24pt;
+  color: #707070;
   float: left;
   border: 0;
   width: 70%;
@@ -157,41 +165,41 @@ body{
 }
 
 .footer{
-  font-family: HelveticaNeueLight;
+  font-family: 'MyHelveticaNeueLight';
+  color: #888888;
   font-size: 12pt;
   text-align: center;
   /*height: 40px;*/
   padding: 5px 12px 5px 12px;
 }
 
-#left_container{
+#left-container{
   float: left;
   /*margin: 12px;*/
 }
-#items_left{
+#items-left{
   /*margin: 12px;*/
 }
-#center_container{
+#center-container{
   display: inline-block;
 }
-#rigth_container{
+#rigth-container{
   float: right;
 }
-/*why no hovering?*/
-.footer_button:hover{
-  border-color: : #ebdfdf;
+
+.footer-button{
+  font-family: 'MyHelveticaNeueLight';
+  font-size: 12pt;
+  color: #888888;
+  background-color: transparent;
+  border: 1px solid transparent;
+  vertical-align: baseline;
   height: 20px;
   cursor:pointer;
 }
-.footer_button{
-  font-family: HelveticaNeueLight;
-  font-size: 12pt;
-  background-color: #ffffff;
-  border-color: : #ffffff;
-  text-align: center;
-  vertical-align: baseline;
-  display: inline-block;
-  height: 20px;
+
+.footer-button-active{
+  border: 1px solid #ebdfdf;
 }
 
 .sheet{
